@@ -48,13 +48,13 @@
             </p>
         </section>
         <section>
-                <h2>Hello There</h2>
-                <p class="fragment">My name is Jose and I have joined Dr.Ting in his research in the Wind Turbine Project</p>
+            <h2>Hello There</h2>
+            <p class="fragment">My name is Jose and I have joined Dr.Ting in his research in the Wind Turbine Project</p>
         </section>
 
-        <section id="fragments">
-            <h2>During my first week I was introduced to the Wind Turbine Project</h2>
-            <p class="fragment">My first goal was to understand the hardware/software of the hotwire calibration</p>
+        <section >
+            <h2>During my third week I continued designing the Website</h2>
+            <p class="fragment">My first goal was to make the index more visually appealing for the users understand</p>
         </section>
 
         <section id="fragments">
@@ -72,13 +72,73 @@
             </span>
         </section>
 
+        <section>
+            <h2>Home Dynamic Website</h2>
+            <p class="fragment">I made the home page by including Foundation 5 into the website. </p>
+            <p class="fragment">I'm going to make it visually appealing by adding custom css</p>
+
+        </section>
+
+
+        <section>
+            <h2>Java Template Designed</h2>
+
+            <p>I also made progress with the automation of the machine. My rough work is on the next slide</p>
+        </section>
+
+
+        <section >
+            <h2>Java Code</h2>
+                <pre><code class="hljs" data-trim contenteditable>
+                    package graphs;
+
+                    import java.util.Arrays;
+                    import java.util.Random;
+
+                    public class automate {
+                        public static void random_automation(int random_array[][]){
+                            Random rand = new Random();
+
+                            for(int c1 = 0, length1 = random_array.length; c1 < length1; c1++){
+                                for(int c2 = 0, length2 = random_array[c1].length; c2 < length2; c2++){
+                                    random_array[c1][c2] = rand.nextInt(50);
+                                }
+                            }
+                        }
+
+                        public static void printArray(int matrix[][]){
+                            for (int[] row : matrix)
+                                System.out.println(Arrays.toString(row));
+                        }
+
+                        public static void main(String[] Args){
+
+                        int[][] empty_array = new int[5][5];
+
+                        random_automation(empty_array);
+
+                        printArray(empty_array);
+                    //		System.out.println(printArray(empty_array) + " ");
+                        }
+                    }
+
+                    </code></pre>
+        </section>
+
+        <section>
+            <h2>Goal for next week is to create a template for C++</h2>
+
+            <p>By creating a template in C++ in will speed research tremoundously</p>
+        </section>
+
         <section style="text-align: left;">
             <h1>THE END</h1>
             <p>
-                - <a href="./instructions.html">Last Week</a> <br>
-                - <a href="./week2">Next Week<br>
+                - <a href="./week2.html">Last Week</a> <br>
+                - <a href="./week4.html">Next Week</a> <br>
 
                 - <a href="..">Go to Homescreen</a>
+
             </p>
         </section>
 

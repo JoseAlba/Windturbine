@@ -1,0 +1,31 @@
+﻿@using WebMatrix.Data;
+
+
+@{
+    var db = Database.Open("Turbine");
+    var selet_query_string = "SELECT t.* FROM PUBLIC.STEPS t ORDER BY t.ID;";
+}
+
+<h1>The Steps needed inorder to run the Hot Wire Calibration</h1>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>
+            Steps
+        </th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    @foreach (var row in db.Query(selet_query_string))
+    {
+        <tr>
+            <td>@row.ID</td>
+            <td>@row.STEP</td>
+        </tr>
+    }
+    </tbody>
+    
+</table>

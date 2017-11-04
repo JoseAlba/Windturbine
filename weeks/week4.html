@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Turbulence and Energy Lab</title>
+
+    <meta name="description" content="Turbulence & Energy Laboratory is a catalyst, forging young minds into knowledgeable and responsible leaders via practical and/or curiosity-driven engineering challenges.  ">
+    <meta name="author" content="Jose Alba">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section >
+            <h1>Turbulence &amp Energy Lab</h1>
+            <h5 class="fragment">Turbulence & Energy Laboratory is a catalyst, forging young minds into knowledgeable and responsible leaders via practical and/or curiosity-driven engineering challenges.  </h5>
+            <p class="fragment">
+                <small>Written by <a href="http://josealba.org">Jose Alba</a> / <a href="http://financialjourney.me">@josealba</a></small>
+            </p>
+        </section>
+        <section>
+            <h2>Hello There</h2>
+            <p class="fragment">My name is Jose and I have joined Dr.Ting in his research in the Wind Turbine Project</p>
+        </section>
+
+        <section >
+            <h2>During my fouth week I focused on automation</h2>
+            <p class="fragment">In order to do this I read through a thesis from a pervious student</p>
+        </section>
+
+        <section>
+            <h2>Notes</h2>
+            <p>The two servomotors are of Animatics® SmartMotorTM SM2315D. The SmartMotorTM is a brushless DC servomotor that uses a built-in controller and amplifier to perform programmed motion.</p>
+            <aside class="notes">
+                The two servomotors are of Animatics® SmartMotorTM SM2315D. The SmartMotorTM is a
+                brushless DC servomotor that uses a built-in controller and amplifier to perform programmed
+                motion. It communicates with the IBM personal computer via the COM port with a RS232
+                standard. The servo controller uses closed loop PID control. The SmartMotorTM can either be run
+                in a predetermined fashion defined by a program downloaded to its memory or in an arbitrary
+                fashion following user commands received from RS232 communication. Two motion programs,
+                HORIZONTAL and VERTICAL were developed for the control purpose in this study. They
+                were compiled with the SMI software from Animatics®. They preset the acceleration, velocity,
+                and travel distance of a given SmartMotorTM. The two motion programs also communicate with
+                the data collection program BRAIN so that a proper action (motion or data collection) can be
+                implemented at a given time.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Notes Continued</h2>
+            <p>The StreamWare® application software offers a complete user interface for controlling the StreamLine® hardware system. It allows one to define a hardware configuration and to setup the individual CTA modules.</p>
+
+        </section>
+
+
+        <section>
+            <h2>Notes Continued</h2>
+            <p>The INSTANT program, written in C++, calculates the mean flow and turbulence velocities at a given location and displays them on the screen. Therefore, the probe orientation can be adjusted accordingly. The details of the INSTANT program can be found in Appendix D.</p>
+            <aside class="notes">
+                Typically, the velocity measurement at a given location consists of two steps: probe
+                positioning and data acquisition which were automatically implemented in this study. These two
+                steps need to be properly coordinated so that the probe will not traverse while data acquisition is
+                in process. This task was undertaken by the C++ program, BRAIN which monitors the status of
+                both the motion and data acquisition processes and sends out commands to start a proper action
+                at a given time.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Notes Continued</h2>
+            <p>The SmartMotor®motion can be programmed with a high level motor language which has
+                keywords for acceleration (A), velocity (V), and distance (D) for position move. Each
+                SmarMotor® has two digital I/O ports designated in the motor language as port A and port B.
+            </p>
+            <aside class="notes">
+                The SmartMotor®motion can be programmed with a high level motor language which has
+                keywords for acceleration (A), velocity (V), and distance (D) for position move. Each
+                SmarMotor® has two digital I/O ports designated in the motor language as port A and port B.
+
+                Each of these two ports can be set as either digital input (UXI, where X may be A or B) or digital
+                output (UXO). The states of port A and B can be programmatically set to high (UX = 1) or low
+                (UX = 0). This digital I/O feature is extremely useful in programming the communication
+                between the two motors and the data collection and coordination program BRAIN.exe. Besides
+                these features, the motor language has basic looping functions such as WHILE-LOOP which has
+                been utilized in the following code to repetitively testing the digital I/O states of the motors.
+            </aside>
+        </section>
+
+        <section>
+            <h2>Goal for next week is to create a template for C++</h2>
+
+            <p>By creating a template in C++ in will speed research tremoundously</p>
+        </section>
+
+        <section style="text-align: left;">
+            <h1>THE END</h1>
+            <p>
+                - <a href="./week3.html">Last Week</a> <br>
+                - <a href="./week5.html">Next Week</a> <br>
+
+                - <a href="..">Go to Homescreen</a>
+
+            </p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+            { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+            { src: 'plugin/zoom-js/zoom.js', async: true },
+            { src: 'plugin/notes/notes.js', async: true }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
